@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LuxeTips | Cart</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="cart">
+  <header id="header">
+    <a href="index.html"><img src="img/logo.png" class="logo" alt="LuxeTips logo"></a>
+    <ul id="navbar">
+      <li><a href="index.html" data-nav="home">Home</a></li>
+      <li><a href="about.html" data-nav="about">About</a></li>
+      <li><a href="product.html" data-nav="products">Products</a></li>
+      <li><a href="contact.html" data-nav="contact">Contact</a></li>
+      <li>
+        <a href="cart.html" class="cart-link" data-nav="cart" aria-label="Cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="cart-count" data-cart-count>0</span>
+        </a>
+      </li>
+    </ul>
+  </header>
+
+  <section class="page-hero section-p1">
+    <div class="page-hero-copy">
+      <span class="tag">Buy Now</span>
+      <h1>Your Cart</h1>
+      <p>Review, Update and Clear Your Order! If there is any query you can contact us through email.</p>
+    </div>
+    <div class="page-hero-card">
+      <img src="img/23.jpg" alt="Cart page">
+    </div>
+  </section>
+
+  <section class="section-p1">
+    <div class="cart-layout">
+      <div class="cart-list" data-cart-items></div>
+      <div data-cart-summary></div>
+    </div>
+  </section>
+
+  <section class="section-p1">
+    <div class="contact-form-wrap checkout-form-wrap" data-checkout-section hidden>
+      <div class="section-head">
+        <h2>Checkout Details</h2>
+        <p>Fill in your delivery details. The order summary and total amount will be included in the message sent to LuxeTips.</p>
+      </div>
+      <form class="contact-form checkout-form" data-checkout-form>
+        <div class="field">
+          <label for="checkout-name">Full Name</label>
+          <input id="checkout-name" name="fullName" type="text" required>
+        </div>
+        <div class="field">
+          <label for="checkout-phone">Phone Number</label>
+          <div class="phone-field">
+            <select id="checkout-country-code" name="countryCode" required>
+              <option value="+92">Pakistan (+92)</option>
+              <option value="+1">USA/Canada (+1)</option>
+              <option value="+44">UK (+44)</option>
+              <option value="+971">UAE (+971)</option>
+              <option value="+91">India (+91)</option>
+              <option value="+61">Australia (+61)</option>
+              <option value="+966">Saudi Arabia (+966)</option>
+            </select>
+            <input id="checkout-phone" name="phone" type="tel" placeholder="3001234567" required>
+          </div>
+        </div>
+        <div class="field">
+          <label for="checkout-email">Email Address</label>
+          <input id="checkout-email" name="email" type="email" required>
+        </div>
+        <div class="field">
+          <label for="checkout-city">City</label>
+          <input id="checkout-city" name="city" type="text" required>
+        </div>
+        <div class="field">
+          <label for="checkout-country">Country</label>
+          <input id="checkout-country" name="country" type="text" required>
+        </div>
+        <div class="field">
+          <label for="checkout-postal">Postal Code</label>
+          <input id="checkout-postal" name="postalCode" type="text" required>
+        </div>
+        <div class="field full">
+          <label for="checkout-address">Permanent Address</label>
+          <textarea id="checkout-address" name="address" required></textarea>
+        </div>
+        <div class="field">
+          <label for="checkout-total">Total Amount</label>
+          <input id="checkout-total" name="totalAmount" type="text" readonly required>
+        </div>
+        <div class="field full">
+          <div class="checkout-note">
+            Your order will stay on this page after submission.
+          </div>
+        </div>
+        <div class="field full">
+          <div class="checkout-status" data-checkout-status hidden></div>
+        </div>
+        <div class="field full checkout-submit-wrap" data-checkout-submit-wrap hidden>
+          <button type="submit" class="normal">Submit Order</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <h3>Want to order with us?</h3>
+        <p>Browse the collection, add your favorites, and place your order in a few simple steps.</p>
+        <a href="product.html" class="footer-cta">Shop Now</a>
+      </div>
+      <div class="footer-divider"></div>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h2>LuxeTips</h2>
+        </div>
+        <div class="footer-links">
+          <h4>Pages</h4>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="product.html">Products</a>
+        </div>
+        <div class="footer-links">
+          <h4>Support</h4>
+          <a href="contact.html">Contact</a>
+          <a href="cart.html">Cart</a>
+          <a href="mailto:amna.mirza782@gmail.com">Email</a>
+        </div>
+        <div class="footer-links footer-social">
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Copyright Amna Tahir</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" data-toast></div>
+  <script src="script.js"></script>
+</body>
+</html>

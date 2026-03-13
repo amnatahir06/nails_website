@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LuxeTips | Contact</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="contact">
+  <header id="header">
+    <a href="index.html"><img src="img/logo.png" class="logo" alt="LuxeTips logo"></a>
+    <ul id="navbar">
+      <li><a href="index.html" data-nav="home">Home</a></li>
+      <li><a href="about.html" data-nav="about">About</a></li>
+      <li><a href="product.html" data-nav="products">Products</a></li>
+      <li><a href="contact.html" data-nav="contact">Contact</a></li>
+      <li>
+        <a href="cart.html" class="cart-link" data-nav="cart" aria-label="Cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="cart-count" data-cart-count>0</span>
+        </a>
+      </li>
+    </ul>
+  </header>
+
+  <section class="page-hero section-p1">
+    <div class="page-hero-copy">
+      <span class="tag">Contact Us</span>
+      <h1>Send your order question, custom request, or sizing query.</h1>
+      <p>This contact section prepares an email to `amna.mirza782@gmail.com` through the visitor’s default mail app, which is the most reliable option for a static website without a backend mail server.</p>
+    </div>
+    <div class="page-hero-card">
+      <img src="img/29.jpg" alt="Contact LuxeTips">
+    </div>
+  </section>
+
+  <section class="section-p1">
+    <div class="split-layout">
+      <div class="contact-stack">
+        <article class="contact-card">
+          <i class="fa-solid fa-envelope"></i>
+          <h3>Email Support</h3>
+          <p>All contact queries are directed to the store inbox.</p>
+          <a href="mailto:amna.mirza782@gmail.com">amna.mirza782@gmail.com</a>
+        </article>
+        <article class="contact-card">
+          <i class="fa-solid fa-clock"></i>
+          <h3>Response Window</h3>
+          <p>Customers can use the form any time. The brand tone and page styling remain aligned with the rest of the storefront.</p>
+        </article>
+      </div>
+
+      <div class="contact-form-wrap">
+        <div class="section-head">
+          <h2>Beautiful Contact Form</h2>
+          <p>Enter your details and your email app will open a ready-to-send message addressed correctly.</p>
+        </div>
+        <form class="contact-form" data-contact-form>
+          <div class="field">
+            <label for="name">Full Name</label>
+            <input id="name" name="name" type="text" required>
+          </div>
+          <div class="field">
+            <label for="email">Email Address</label>
+            <input id="email" name="email" type="email" required>
+          </div>
+          <div class="field">
+            <label for="phone">Phone Number</label>
+            <input id="phone" name="phone" type="tel" required>
+          </div>
+          <div class="field">
+            <label for="subject">Subject</label>
+            <input id="subject" name="subject" type="text" value="LuxeTips Customer Inquiry" required>
+          </div>
+          <div class="field full">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell us what style, size, or order help you need." required></textarea>
+          </div>
+          <div class="field full">
+            <button type="submit" class="normal">Send via Email</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <h3>Want to order with us?</h3>
+        <p>Browse the collection, add your favorites, and place your order in a few simple steps.</p>
+        <a href="product.html" class="footer-cta">Shop Now</a>
+      </div>
+      <div class="footer-divider"></div>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h2>LuxeTips</h2>
+        </div>
+        <div class="footer-links">
+          <h4>Pages</h4>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="product.html">Products</a>
+        </div>
+        <div class="footer-links">
+          <h4>Support</h4>
+          <a href="contact.html">Contact</a>
+          <a href="cart.html">Cart</a>
+          <a href="mailto:amna.mirza782@gmail.com">Email</a>
+        </div>
+        <div class="footer-links footer-social">
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+            <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Copyright Amna Tahir</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" data-toast></div>
+  <script src="script.js"></script>
+</body>
+</html>
