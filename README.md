@@ -13,7 +13,7 @@ A preview video of the project is available in this repository.
 
 Click below to watch:
 
-[Project Preview Video](./nailsWebsite.mp4)
+[Project Preview Video](https://raw.githubusercontent.com/amnatahir06/nails_website/main/nailsWebsite.mp4)
 
 ---
 
